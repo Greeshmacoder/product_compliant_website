@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="product_compliant_website.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+<style>
+     body {
+            margin: 0;
+            padding: 0;
+            background-image: url('../images/4.png');
+            
+        }
+       
+        
+       h1 {
+            color:orange;
+            font-family:Algerian;
+        }
+
+     nav {
+    width: 100%;
+    background: black;
+    overflow: auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0 auto,auto 150px;
+    list-style: none;
+    
+}
+
+li {
+    float: left;
+  
+}
+nav a {
+    width: 100px;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family:Algerian;
+    color: #f2f2f2;
+    text-align: center;
+}
+    nav a:hover {
+        background: purple;
+        transition: 0.5s;
+        text-transform: lowercase;
+    }
+
+
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:forestgreen">
+    
+     <nav>
+        <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="product_reg.aspx"> Product Registration</a></li>
+            <li><a href="confirmuser.aspx"> User Verification</a></li>
+            <li><a href="compliant_verify.aspx"> Compliant Verification </a></li>
+      
+            <li><a href="query_reply.aspx"> Query Reply </a></li>
+            
+
+            <li><a href="../Guest/index.aspx" > Log Out</a></li>
+           
+        </ul>
+    </nav>
+            
+           
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        
+    
+</body>
+</html>

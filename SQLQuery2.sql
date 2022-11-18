@@ -1,0 +1,1 @@
+﻿ALTER Table tlb_query ADD username varchar(50);

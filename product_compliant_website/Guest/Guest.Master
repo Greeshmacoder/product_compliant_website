@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Guest.master.cs" Inherits="product_compliant_website.Guest.Guest" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+     <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('../images/4.png');
+            
+        }
+       
+        
+       h1 {
+            color:indigo;
+            font-family:Algerian;
+        }
+
+     nav {
+    width: 100%;
+    background: black;
+    overflow: auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0 auto,auto 150px;
+    list-style: none;
+    
+}
+
+li {
+    float: left;
+  
+}
+nav a {
+    width: 100px;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family:Algerian;
+    color: #f2f2f2;
+    text-align: center;
+}
+    nav a:hover {
+        background: purple;
+        transition: 0.5s;
+        text-transform: lowercase;
+    }
+
+
+    </style>
+
+     
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    
+    <h1><center> </center></h1>
+    <form id="form1" runat="server">
+         <div style="background-color:goldenrod" align="center">
+        <br />
+   <br />
+             <nav>
+             <ul>
+          <li><a href="Login.aspx"> Login</a></li>
+            <li><a href="../user/register.aspx"> User Registration</a></li>
+            <li><a href="index.aspx"> Log Out</a></li>
+               
+         </ul>
+       </nav>
+          
+      <br />
+              <br />
+
+            </div>
+        
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

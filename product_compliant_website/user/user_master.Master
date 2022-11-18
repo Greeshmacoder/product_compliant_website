@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="user_master.master.cs" Inherits="product_compliant_website.user.user_master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('../images/4.png');
+            
+        }
+       
+        
+       h1 {
+            color:orange;
+            font-family:Algerian;
+        }
+
+     nav {
+    width: 100%;
+    background: black;
+    overflow: auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0 auto,auto 150px;
+    list-style: none;
+    
+}
+
+li {
+    float: left;
+  
+}
+nav a {
+    width: 100px;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family:Algerian;
+    color: #f2f2f2;
+    text-align: center;
+}
+    nav a:hover {
+        background: purple;
+        transition: 0.5s;
+        text-transform: lowercase;
+    }
+
+
+    </style>
+
+     
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+    <br />
+    
+    <form id="form1" runat="server">
+       
+        <div style="background-color:goldenrod" align="center">
+            <br />
+            
+          <nav>
+        <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="Complaint%20page.aspx"> Compliant Registration</a></li>
+            <li><a href="Querypage.aspx"> Query Registration</a></li>
+            <li><a href="productView.aspx"> Product View </a></li>
+            <li><a href="ClosedQuery.aspx"> Closed Complaint</a></li>
+            <li><a href="../Guest/index.aspx" > Log Out</a></li>
+           
+        </ul>
+    </nav>
+            
+           
+            <br />
+            
+         
+           
+            <br/>
+      </div>
+
+           
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
