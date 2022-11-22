@@ -29,6 +29,7 @@
            <asp:BoundField DataField="query" HeaderText="Query" />
            <asp:BoundField DataField="username" HeaderText="Username" />
            <asp:BoundField DataField="pid" HeaderText="Product_id" />
+           <asp:HyperLinkField DataNavigateUrlFields="query_id" DataNavigateUrlFormatString="Query.aspx?query_id={0}" HeaderText="Reply" Text="Reply" />
        </Columns>
     </asp:GridView></center>
     </form>

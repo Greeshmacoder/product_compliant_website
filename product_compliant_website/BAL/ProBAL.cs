@@ -26,6 +26,8 @@ namespace product_compliant_website.BAL
         public string _To;
         public string _from;
         public string _cid;
+        public int _query_id;
+        public string _Reply;
 
         public string reg_id
         {
@@ -244,6 +246,34 @@ namespace product_compliant_website.BAL
 
             }
         }
+        public int query_id
+        {
+            get
+            {
+                return _query_id;
+
+            }
+            set
+            {
+                _query_id = value;
+
+
+            }
+        }
+        public string Reply
+        {
+            get
+            {
+                return _Reply;
+
+            }
+            set
+            {
+                _Reply= value;
+
+
+            }
+        }
 
 
 
@@ -318,11 +348,23 @@ namespace product_compliant_website.BAL
         }
         public DataTable queryyview()
         {
-            return objdeptd1.Viewqueryy();
+            return objdeptd1.Viewquery();
         }
         public DataTable closedview()
         {
             return objdeptd1.Viewqueryy();
+        }
+        public DataTable ViewSpecificQuery()
+        {
+            return objdeptd1.ViewSpecificQueryDetails(this);
+        }
+        public int GiveReply()
+        {
+            return objdeptd1.GiveReplyDetails(this);
+        }
+        public DataTable closedviewqyery()
+        {
+            return objdeptd1.viewreplyquery();
         }
     }
 }

@@ -25,7 +25,7 @@ namespace product_compliant_website.user
             int j= objdpt1.insertLogin();
             if (i == 1)
             {
-                Response.Write("sucess");
+                Response.Write("<script>alert('query sucessfully Send ');</script>");
             }
             else
             {

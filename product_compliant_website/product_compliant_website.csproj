@@ -71,6 +71,7 @@
     <Content Include="Admin\compliant_verify.aspx" />
     <Content Include="Admin\Confirmuser.aspx" />
     <Content Include="Admin\product_reg.aspx" />
+    <Content Include="Admin\Query.aspx" />
     <Content Include="Admin\query_reply.aspx" />
     <Content Include="Guest\index.aspx" />
     <Content Include="Guest\Login.aspx" />
@@ -82,6 +83,7 @@
     <Content Include="user\Complaint page.aspx" />
     <Content Include="user\productView.aspx" />
     <Content Include="user\Querypage.aspx" />
+    <Content Include="user\query_grid.aspx" />
     <Content Include="user\register.aspx" />
     <Content Include="user\WebForm1.aspx" />
     <Content Include="Web.config" />
@@ -121,6 +123,13 @@
     </Compile>
     <Compile Include="Admin\product_reg.aspx.designer.cs">
       <DependentUpon>product_reg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Query.aspx.cs">
+      <DependentUpon>Query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Query.aspx.designer.cs">
+      <DependentUpon>Query.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\query_reply.aspx.cs">
       <DependentUpon>query_reply.aspx</DependentUpon>
@@ -194,6 +203,13 @@
     </Compile>
     <Compile Include="user\Querypage.aspx.designer.cs">
       <DependentUpon>Querypage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\query_grid.aspx.cs">
+      <DependentUpon>query_grid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\query_grid.aspx.designer.cs">
+      <DependentUpon>query_grid.aspx</DependentUpon>
     </Compile>
     <Compile Include="user\register.aspx.cs">
       <DependentUpon>register.aspx</DependentUpon>

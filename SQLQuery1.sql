@@ -1,0 +1,1 @@
+﻿SELECT l.username,p.*,q.* FROM tlb_query q INNER JOIN tlb_login l ON l.lId = q.user_id INNER JOIN tbl_product p ON p.pid= q.pid WHERE q.query_id =3;

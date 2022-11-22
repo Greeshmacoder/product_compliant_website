@@ -190,7 +190,31 @@ namespace product_compliant_website.DAL
             da.Fill(dt);
             return dt;
         }
-
+        
+        public DataTable ViewSpecificQueryDetails(BAL.ProBAL querybal)
+        {
+            string qry = "SELECT l.username,p.*,q.* FROM tlb_query q INNER JOIN tlb_login l ON l.lId = q.user_id INNER JOIN tbl_product p ON p.pid= q.pid WHERE q.query_id ='" + querybal.query_id + "'";
+            SqlCommand cmd = new SqlCommand(qry, Getcon());
+            DataTable dt = new DataTable();
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+            dataAdapter.Fill(dt);
+            return dt;
+        }
+        public int GiveReplyDetails(BAL.ProBAL querybal)
+        {
+            string qry = "UPDATE  tlb_query SET query_reply = '" + querybal.Reply + "' where query_Id = '" + querybal.query_id + "'";
+            SqlCommand cmd = new SqlCommand(qry, Getcon());
+            return cmd.ExecuteNonQuery();
+        }
+        public DataTable viewreplyquery()
+        {
+            string s = "Select * from tlb_query";
+            SqlCommand cmd = new SqlCommand(s, Getcon());
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
     }
 
 }

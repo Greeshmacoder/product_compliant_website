@@ -2,5 +2,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1><center>PRODUCT COMPLAINT BOX</center></h1>
+    <br />
+    <br />
+    <h1><center>
+    <br />
+    <br />
+    <br />
+    <br />
+    PRODUCT COMPLAINT BOX</center></h1>
 </asp:Content>
